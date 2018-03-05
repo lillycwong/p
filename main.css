@@ -114,9 +114,26 @@ footer {
 
 /* For tablets & smart phones */
 @media (max-width: 767px) {
-    
     .container {
         width: auto;
+    }
+
+    nav {
+        height: 130px; 
+        padding:10px;
+    }
+
+    nav img {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #social {
+        text-align: center;
+        float: none;
+        margin-right: 0px;  
+        margin-top: -10px;
     }
 }
 
