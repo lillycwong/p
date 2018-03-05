@@ -5,82 +5,119 @@
     -make about me html
     -make featured stuff slideshow
     -get css for gallery
+    -take thumbnail photos
 -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    
-    <link type="text/css" href="main.css" rel="stylesheet">
+    <title>lilly claire wong</title>
 
+    <meta name="viewport" content="width=device-width">
+
+    <!-- font awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    
+
+    <!-- lightbox script -->
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+
+    <!-- css -->
+    <link type="text/css" href="main.css" rel="stylesheet">
 </head>
+
 <body>
-   <nav>
-       <img src="logo2.png">
-       
-       <div id="social">
-           <a href="https://github.com/lillycwong"><i class="fab fa-github"></i></a>
-           <a href="https://www.linkedin.com/in/lillycwong/"><i class="fab fa-linkedin"></i></a>
+    <nav>
+        <img src="logo2.png">
+
+        <div id="social">
+            <a href="https://github.com/lillycwong"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lillycwong/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://pastebin.com/u/lills"><i class="fas fa-paste"></i></a>
             <a href="http://www.instagram.com/lillycwong"><i class="fab fa-instagram"></i></a>
-           <a href="https://www.flickr.com/photos/lillycwong"><i class="fab fa-flickr"></i></a>
-           <a href="http://steamcommunity.com/id/imwithlilly/"><i class="fab fa-steam"></i></a>
-       </div>
-   </nav>
-   
-   <section>
-       <div id="gallery">
-           <!-- Gallery Row 1 Start -->
-           <section class="one-third">
-               <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
-           </section>
-           
-           <section class="one-third">
-               <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
-           </section>
-           
-           <section class="one-third">
-               <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
-           </section>
+            <a href="https://www.flickr.com/photos/lillycwong"><i class="fab fa-flickr"></i></a>
+            <a href="http://steamcommunity.com/id/imwithlilly/"><i class="fab fa-steam"></i></a>
+        </div>
+    </nav>
 
-           <!-- Gallery Row 1 End -->
+    <div class="container">
+        <div id="slides">
+            <img src="http://placehold.it/940x528">
+            <img src="http://placehold.it/940x528">
+            <img src="http://placehold.it/940x528">
+            <img src="http://placehold.it/940x528">
+            <img src="http://placehold.it/940x528">
+            <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fas fa-angle-left"></i></a>
+            <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
 
-           <!-- Gallery Row 2 Start -->
-           <section class="one-third">
-               <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
-           </section>
-           
-           <section class="one-third">
-               <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
-           </section>
-           
-           <section class="one-third">
-               <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
-           </section>
-           <!-- Gallery Row 2 End -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="slider/jquery.slides.min.js"></script>
 
-           <!-- Gallery Row 3 Start -->
-           <section class="one-third">
-               <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
-           </section>
-           
-           <section class="one-third">
-               <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
-           </section>
-           
-           <section class="one-third">
-               <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
-           </section>
-           <!-- Gallery Row 3 End -->
-       </div>
-   </section>
-    
+    <script>
+        $(function() {
+            $('#slides').slidesjs({
+                width: 940,
+                height: 528,
+                navigation: false
+            });
+        });
+
+    </script>
+
+    <!----------->
+
+    <section>
+        <div id="gallery">
+            <!-- Gallery Row 1 Start -->
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+            </section>
+
+            <!-- Gallery Row 1 End -->
+
+            <!-- Gallery Row 2 Start -->
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+            </section>
+            <!-- Gallery Row 2 End -->
+
+            <!-- Gallery Row 3 Start -->
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+            </section>
+            <!-- Gallery Row 3 End -->
+        </div>
+    </section>
 </body>
+
 </html>
