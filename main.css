@@ -11,7 +11,33 @@ header {
 }
 
 nav {
-    
+    background-color: #fff9c2;
+    height:80px;
+    padding: 10px;
+}
+
+nav img {
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+#social {
+    float: right;
+    line-height: 80px;
+    margin-right: 50px;
+    font-size: 23px;
+    letter-spacing: 10px;
+}
+
+#social a {
+    color: black;
+    transition: 0.2s;
+}
+
+#social a:hover {
+    color: pink;
+    transition: 0.2s;
 }
 
 footer {
