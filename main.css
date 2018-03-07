@@ -55,23 +55,27 @@ footer {
 }
 
 #slides .slidesjs-navigation {
-    margin-top:3px;
+    margin: 0 auto;
 }
 
 #slides .slidesjs-previous {
-    margin-right: 5px;
+    margin-left: 40vw;
+    margin-top: 7px;
+    font-size: 19px;
     float: left;
 }
 
 #slides .slidesjs-next {
-    margin-right: 5px;
-    float: left;
+    margin-right: 40vw;
+    margin-top: 7px;
+    font-size: 19px;
+    float: right;
 }
 
 .slidesjs-pagination {
-    margin: 6px 0 0;
-    float: right;
+    margin: 10px 0 0;
     list-style: none;
+    margin-left: 42.5vw;
 }
 
 .slidesjs-pagination li {
@@ -80,7 +84,7 @@ footer {
 }
 
 .slidesjs-pagination li a {
-    display: block;
+    display: inline-block;
     width: 13px;
     height: 0;
     padding-top: 13px;
