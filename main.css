@@ -2,27 +2,53 @@ body {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    margin-left: 0px
+    margin-left: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
-a {
-    
+a {}
+
+header {}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: -4px;
+    transition: 0.2s;
 }
 
-header {
-    
+img:hover {
+    opacity: 0.8;
+    transition: 0.2s;
 }
 
 nav {
     background-color: #fff9c2;
-    height:80px;
+    height: 80px;
+    width: 100%;
     padding: 10px;
+    position: fixed;
 }
 
 nav img {
     height: 60px;
     margin-top: 10px;
     margin-left: 40px;
+}
+
+#secheader {
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+section {
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 #social {
@@ -44,9 +70,8 @@ nav img {
     transition: 0.2s;
 }
 
-footer {
-    
-}
+footer {}
+
 
 /* slider */
 
@@ -116,62 +141,87 @@ footer {
     margin: 0 auto;
 }
 
+
+/* grid */
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.one-third {
+    width: 29%;
+    float: left;
+    margin: 2%;
+}
+
+.category {
+    margin-top: 100px;
+}
+
+
 /* For tablets & smart phones */
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 768px) {
     .container {
         width: auto;
     }
-
     nav {
-        height: 130px; 
-        padding:10px;
+        height: 130px;
+        padding: 10px;
     }
-
     nav img {
         display: block;
         margin: auto;
         margin-top: 10px;
     }
-
     #social {
         text-align: center;
         float: none;
-        margin-right: 0px;  
+        margin-right: 0px;
         margin-top: -10px;
+    }
+    .one-third {
+        width: 48%;
+        margin: 1%;
     }
 }
 
+
 /* For smartphones */
+
 @media only screen and (max-width: 480px) {
     .container {
         width: auto;
     }
-    
     nav {
-        height: 130px; 
-        padding:10px;
+        height: 130px;
+        padding: 10px;
     }
-    
     nav img {
         display: block;
         margin: auto;
         margin-top: 10px;
     }
-    
     #social {
         text-align: center;
         float: none;
-        margin-right: 0px;  
+        margin-right: 0px;
         margin-top: -10px;
+    }
+    .one-third {
+        width: 98%;
+        margin: 1%;
+        max-width: 480px;
     }
 }
 
+
 /* For smaller displays like laptops */
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-    
-}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {}
+
 
 /* For larger displays */
-@media only screen and (min-width: 1200px) {
-    
-}
+
+@media only screen and (min-width: 1200px) {}

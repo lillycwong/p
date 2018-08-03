@@ -1,11 +1,18 @@
 <!-- 
    to do:
     -customize scrollbar
-    -get complete list of everything
+    -get complete list of everything x
     -make about me html
-    -make featured stuff slideshow
-    -get css for gallery
-    -take thumbnail photos
+    -make resume pop up somehow
+    -add tumblr themes section
+    -move theme code from pastebin to github
+    -jazz up github acct
+    -purchase domain
+    -add project to github
+    -resize photos for github repository file size limit
+    -make site fullscreen landing page style
+    -add about me sections - see final proj (thabet website) for inspo and help
+    
     -use diff code for slides?
         -slick
         -owl carousel
@@ -21,8 +28,11 @@
 
     <meta name="viewport" content="width=device-width">
 
+    <link rel="icon" type="image/png" href="photos/Facetune_07-02-2018-16-34-44.png">
+
     <!-- font awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300" rel="stylesheet">
 
     <!-- lightbox script -->
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -49,7 +59,7 @@
             <a href="http://steamcommunity.com/id/imwithlilly/"><i class="fab fa-steam"></i></a>
         </div>
     </nav>
-    
+
     <!-- slider
     <div class="container">
         <div id="slides">
@@ -77,55 +87,111 @@
     </script>
 
    -->
-   
+
     <!----------->
-    <br><br><br><br>
-    <section>
+    <br><br>
+    <section class="category">
+        <div id="secheader">GRAPHIC DESIGN</div>
+        <hr>
         <div id="gallery">
             <!-- Gallery Row 1 Start -->
             <section class="one-third">
-                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+                <a class="example-image-link" id="lightbox-img" href="graphics/logos/pf-logo-tp.png" data-lightbox="example-set" data-title="Phenomenal Faces Logo"><img class="example-image" src="graphics/logos/pf-logo-tp.png" alt="Phenomenal Faces Logo" title="Phenomenal Faces Logo"></a>
             </section>
 
             <section class="one-third">
-                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+                <a class="example-image-link" id="lightbox-img" href="graphics/logos/arf1.jpg" data-lightbox="example-set" data-title="Allyson Fisher Logo"><img class="example-image" src="graphics/logos/arf1.jpg" alt="Allyson Fisher Logo" title="Allyson Fisher Logo"></a>
             </section>
 
             <section class="one-third">
-                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+                <a class="example-image-link" id="lightbox-img" href="thabet/7up%20card%20with%20coupon.png" data-lightbox="example-set" data-title="#"><img class="example-image" src="thabet/7up%20card%20with%20coupon%202.jpg" alt="#" title="#"></a>
             </section>
 
             <!-- Gallery Row 1 End -->
 
             <!-- Gallery Row 2 Start -->
             <section class="one-third">
-                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+                <a class="example-image-link" id="lightbox-img" href="graphics/logos/grant%20logo2.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="graphics/logos/grant%20logo2.jpg" alt="#" title="#"></a>
             </section>
 
             <section class="one-third">
-                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+                <a class="example-image-link" id="lightbox-img" href="graphics/logos/sabrina.png" data-lightbox="example-set" data-title="#"><img class="example-image" src="graphics/logos/sabrina.png" alt="#" title="#"></a>
             </section>
 
             <section class="one-third">
-                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+                <a class="example-image-link" id="lightbox-img" href="graphics/logos/laurel%20logo-03.png" data-lightbox="example-set" data-title="#"><img class="example-image" src="graphics/logos/laurel%20logo-03.png" alt="#" title="#"></a>
             </section>
             <!-- Gallery Row 2 End -->
 
             <!-- Gallery Row 3 Start -->
             <section class="one-third">
-                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+                <a class="example-image-link" id="lightbox-img" href="gs/gs-placard-romecc.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="gs/gs-placard-romecc%20copy.jpg" alt="#" title="#"></a>
             </section>
 
             <section class="one-third">
-                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+                <a class="example-image-link" id="lightbox-img" href="thabet/adult%20txt%20sign%20new%20colors.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="thabet/adult%20txt%20sign%20new%20colors.jpg" alt="#" title="#"></a>
             </section>
 
             <section class="one-third">
-                <a class="example-image-link" id="lightbox-img" href="#" data-lightbox="example-set" data-title="#"><img class="example-image" src="#" alt="#" title="#"></a>
+                <a class="example-image-link" id="lightbox-img" href="graphics/city%20line%20art.png" data-lightbox="example-set" data-title="Seattle Cityscape Drawing"><img class="example-image" src="graphics/city%20line%20art%20copy.png" alt="Seattle Cityscape Drawing" title="Seattle Cityscape Drawing"></a>
             </section>
             <!-- Gallery Row 3 End -->
         </div>
     </section>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <section class="category">
+        <div id="secheader">
+            PHOTOGRAPHY</div>
+        <hr>
+        <div id="gallery2">
+            <!-- Gallery Row 1 Start -->
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="photos/frozenlake.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="photos/frozenlake%20copy.jpg" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="photos/IMG_1850.jpg" data-lightbox="example-set" data-title="Chicago Magnificent Mile"><img class="example-image" src="photos/IMG_1850%20copy.jpg" alt="Chicago Magnificent Mile" title="Chicago Magnificent Mile"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="photos/yrs.jpg" data-lightbox="example-set" data-title="Young Rising Sons"><img class="example-image" src="photos/yrs%20copy.jpg" alt="Young Rising Sons" title="Young Rising Sons"></a>
+            </section>
+
+            <!-- Gallery Row 1 End -->
+
+            <!-- Gallery Row 2 Start -->
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="photos/_DSC3235.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="photos/_DSC3235%20copy.jpg" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="photos/aliyah.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="photos/aliyah%20copy.jpg" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="photos/DSC_0745.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="photos/DSC_0745%20copy.jpg" alt="#" title="#"></a>
+            </section>
+            <!-- Gallery Row 2 End -->
+
+            <!-- Gallery Row 3 Start -->
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="photos/halsey2.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="photos/halsey2%20copy.jpg" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="photos/citylife.JPG" data-lightbox="example-set" data-title="#"><img class="example-image" src="photos/citylife%20copy.JPG" alt="#" title="#"></a>
+            </section>
+
+            <section class="one-third">
+                <a class="example-image-link" id="lightbox-img" href="photos/michael.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="photos/michael%20copy.jpg" alt="#" title="#"></a>
+            </section>
+            <!-- Gallery Row 3 End -->
+        </div>
+    </section>
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
