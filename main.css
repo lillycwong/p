@@ -17,7 +17,6 @@ img {
     max-width: 100%;
     height: auto;
     width: auto;
-    margin-bottom: -4px;
     transition: 0.2s;
 }
 
@@ -32,6 +31,7 @@ nav {
     width: 100%;
     padding: 10px;
     position: fixed;
+    z-index: 9999;
 }
 
 nav img {
@@ -44,6 +44,7 @@ nav img {
     font-size: 22px;
     letter-spacing: 3px;
     color: rgb(0, 0, 0, 0.7);
+    margin-top: 10px;
 }
 
 section {
@@ -68,6 +69,14 @@ section {
 #social a:hover {
     color: pink;
     transition: 0.2s;
+}
+
+#landing {
+    background-image: url("photos/frozenlake.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {}
@@ -162,7 +171,7 @@ footer {}
 
 /* For tablets & smart phones */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .container {
         width: auto;
     }
@@ -182,8 +191,11 @@ footer {}
         margin-top: -10px;
     }
     .one-third {
-        width: 48%;
+        width: 47%;
         margin: 1%;
+    }
+    #secheader {
+        margin-top: 150px;
     }
 }
 
@@ -213,6 +225,9 @@ footer {}
         width: 98%;
         margin: 1%;
         max-width: 480px;
+    }
+    #secheader {
+        margin-top: 150px;
     }
 }
 
